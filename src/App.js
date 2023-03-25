@@ -1,7 +1,7 @@
 import './App.css';
-import Dropdown from './components/Dropdown';
 import FileUploader from './components/FileUploader';
 import { Route, Switch } from 'react-router-dom';
+import Dropdown from './components/Dropdown';
 
 const App = () => {
   return (
@@ -9,10 +9,10 @@ const App = () => {
     <main>
       <Switch>
         <Route path='/' exact>
-          <FileUploader />
-        </Route>
-        <Route path='/dropdown'>
           <Dropdown />
+        </Route>
+        <Route path='/upload'>
+          <FileUploader />
         </Route>
       </Switch>
     </main>
